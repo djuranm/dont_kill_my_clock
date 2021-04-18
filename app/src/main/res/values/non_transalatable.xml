@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  NOTIFICATION  -->
+    <string name="notification_channel_name" translatable="false">Clock</string>
+
+    <!--  PERSISTENCE  -->
+    <string name="preference_file_key" translatable="false">state_file</string>
+    <string name="state_key" translatable="false">current_state</string>
+
+</resources>
