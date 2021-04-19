@@ -1,14 +1,14 @@
 package com.djuranm.dontkillmyclock
 
 import android.app.Application
-import com.djuranm.dontkillmyclock.notification.NotificationCenter
+import com.djuranm.dontkillmyclock.service.ClockForegroundService
 
 class DKMCApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
 
-        NotificationCenter.createNotificationChannel(this)
+        ClockForegroundService.createNotificationChannel(this)
     }
 
 }

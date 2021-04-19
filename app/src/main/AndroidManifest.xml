@@ -3,6 +3,7 @@
     package="com.djuranm.dontkillmyclock">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:name=".DKMCApplication"
@@ -36,6 +37,8 @@
                 <action android:name="android.intent.action.ACTION_SHUTDOWN" />
             </intent-filter>
         </receiver>
+
+        <service android:name=".service.ClockForegroundService" />
 
     </application>
 
